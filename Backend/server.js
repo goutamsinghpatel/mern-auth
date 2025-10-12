@@ -7,6 +7,7 @@ import cookieParser from "cookie-parser";
 import connectDb from "./config/mongodb.js";
 // authRoutes
 import authRouter from "./Routes/authRouter.js";
+import userRouter from "./Routes/userRoutes.js";
 const app=express();
 const port=process.env.PORT || 4000
 connectDb();
@@ -25,6 +26,7 @@ app.get("/",async(req,res)=>{
     res.send(`server Startede in port ${port}`);
 })
 app.use("/api/auth",authRouter);
+app.use("/api/user",userRouter);
 
 
 
