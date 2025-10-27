@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital@0;1&family=Story+Script&display=swap');
+@import "tailwindcss";
+*{
+   font-family: "Outfit", sans-serif;
+
+}

@@ -11,13 +11,17 @@ import userRouter from "./Routes/userRoutes.js";
 const app=express();
 const port=process.env.PORT || 4000
 connectDb();
+
+
   
 // all the request pass using json  
 app.use(express.json())
 // for the cookies 
 app.use(cookieParser());
 // we send cookies in resopones
-app.use(cors({credentials:true}));
+const allwordOrigin=['http://localhost:5173']
+app.use(cors({origin:allwordOrigin,credentials:true}));
+// here origin:allwordOrigin is the frontend url 
 // apit end point 
 
 app.get("/",async(req,res)=>{

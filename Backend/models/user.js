@@ -20,7 +20,7 @@ const userSchema= new schema({
         
     },
     verifyOtp:{
-        type:Number,
+        type:String,
         default:'',
     },
      verifyOtpExpireAt:{
