@@ -19,7 +19,7 @@ app.use(express.json())
 // for the cookies 
 app.use(cookieParser());
 // we send cookies in resopones
-const allwordOrigin=['http://localhost:5173']
+const allwordOrigin=['http://localhost:5173',"https://mern-auth-goutam.vercel.app"]
 app.use(cors({origin:allwordOrigin,credentials:true}));
 // here origin:allwordOrigin is the frontend url 
 // apit end point 
