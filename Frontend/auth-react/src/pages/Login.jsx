@@ -18,10 +18,10 @@ export default function Login(){
     }
     const signUp=()=> setState("signUp");
     const handleFormSubmit=async(event)=>{
-    axios.defaults.withCredentials=true;
-  
+       
 try {
     event.preventDefault();
+    axios.defaults.withCredentials=true;
     // here cookies come  and also we can check that cookies
     if(state==='signUp'){
      const   {data}=   await axios.post(backendUrl +'/api/auth/register',{name,email,password})
